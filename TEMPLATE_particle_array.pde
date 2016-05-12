@@ -21,9 +21,9 @@ void setup() {
   background(255);
   
   int locX = width/numberOfRows; // where the first particle is drawn
-  int locY = height/numberOfRows;
+  int locY = height/numberOfRows; // very important for looops
   
-  //create a particle list
+  //create a particle list based on how many rows you want vs. width/height
   for (int i = 0; i < numberOfRows - 1; i++) {
     
     // this for loop loops once per row of particles
